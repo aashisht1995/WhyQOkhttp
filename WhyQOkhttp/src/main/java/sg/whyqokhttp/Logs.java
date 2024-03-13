@@ -2,6 +2,8 @@ package sg.whyqokhttp;
 
 import android.util.Log;
 
+import sg.whyqokhttp.BuildConfig;
+
 public class Logs {
 
     public static void e(String tag, String value) {

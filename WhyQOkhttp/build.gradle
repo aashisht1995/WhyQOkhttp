@@ -27,6 +27,9 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
     namespace 'sg.whyqokhttp'
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {

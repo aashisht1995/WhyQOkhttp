@@ -6,6 +6,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Window;
 
+import sg.whyqokhttp.R;
+
 
 public class CustomProgress extends Dialog {
 
