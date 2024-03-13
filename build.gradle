@@ -1,43 +1,27 @@
-plugins {
-    id 'maven-publish'
-    id 'com.android.library'
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0'
+        classpath 'com.google.gms:google-services:4.4.0'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
+    }
 }
 
-group = 'com.github.aashisht1995'
-
-android {
-    compileSdkVersion 34
-    buildToolsVersion "34.0.0"
-
-    defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 34
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral() // For ImagePicker library, this line is enough. Although, it has been published on jitpack as well
+        maven { url "https://jitpack.io" }
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
-    }
-    namespace 'sg.whyqokhttp'
 }
 
-dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.1")
-
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
-
-    //implementation 'io.realm:realm-android:0.82.1'
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
