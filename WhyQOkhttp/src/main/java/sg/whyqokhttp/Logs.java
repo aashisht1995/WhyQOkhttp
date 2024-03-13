@@ -1,8 +1,8 @@
-package com.aashisht1995.whyqokhttp;
+package sg.whyqokhttp;
 
 import android.util.Log;
 
-import com.aashisht1995.whyqokhttp.BuildConfig;
+import sg.whyqokhttp.BuildConfig;
 
 public class Logs {
 

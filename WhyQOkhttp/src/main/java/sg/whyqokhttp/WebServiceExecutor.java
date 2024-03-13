@@ -1,4 +1,4 @@
-package com.aashisht1995.whyqokhttp;
+package sg.whyqokhttp;
 
 import android.content.Context;
 import android.os.Handler;

@@ -1,4 +1,4 @@
-package com.aashisht1995.whyqokhttp;
+package sg.whyqokhttp;
 
 import android.app.Application;
 

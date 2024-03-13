@@ -1,4 +1,4 @@
-package com.aashisht1995.whyqokhttp;
+package sg.whyqokhttp;
 
 public interface ResponseListener {
     void onResponse(int requestCode, int responseCode, String response);

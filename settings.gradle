@@ -1,2 +1,1 @@
 include ':WhyQOkhttp'
-rootProject.name = "WhyQOkhttp"

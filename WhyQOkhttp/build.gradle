@@ -26,7 +26,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-    namespace 'com.aashisht1995.whyqokhttp'
+    namespace 'sg.whyqokhttp'
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {
