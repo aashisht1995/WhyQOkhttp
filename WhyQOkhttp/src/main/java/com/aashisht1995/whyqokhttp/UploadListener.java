@@ -1,4 +1,4 @@
-package sg.whyqokhttp;
+package com.aashisht1995.whyqokhttp;
 
 /**
  * Created by khandelwal@SYON.COM on 7/3/17.

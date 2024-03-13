@@ -1,4 +1,4 @@
-package sg.whyqokhttp;
+package com.aashisht1995.whyqokhttp;
 
 import android.content.Context;
 import android.graphics.Bitmap;
